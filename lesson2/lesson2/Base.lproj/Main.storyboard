@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lesson2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="1Yu-CE-ONS">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Squid" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tt-fS-yjD">
+                                <rect key="frame" x="143" y="184" width="104" height="95.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRa-Yy-OAX">
+                                <rect key="frame" x="45" y="399.66666666666669" width="300" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="QmF-GU-w4o"/>
+                                    <constraint firstAttribute="width" constant="300" id="vR7-tj-rCk"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login with Facebook">
+                                    <backgroundConfiguration key="background" image="FB" imageContentMode="scaleAspectFill"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3A-fQ-2jK">
+                                <rect key="frame" x="45" y="484.66666666666669" width="300" height="45.000000000000057"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="b4F-iA-bvL"/>
+                                    <constraint firstAttribute="width" constant="300" id="n8h-9h-wZN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login with Google">
+                                    <backgroundConfiguration key="background" image="Google" imageContentMode="scaleAspectFill"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JO5-Wb-cOY">
+                                <rect key="frame" x="45" y="569.66666666666663" width="300" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="JLJ-If-t56"/>
+                                    <constraint firstAttribute="height" constant="45" id="gSU-e5-iD7"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login with Email">
+                                    <backgroundConfiguration key="background" image="Email" imageContentMode="scaleAspectFill"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with any account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlD-wD-Hzg">
+                                <rect key="frame" x="71" y="329.66666666666669" width="248" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SlD-wD-Hzg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4TD-LX-cS7"/>
+                            <constraint firstItem="1Yu-CE-ONS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="57c-42-m7X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Yu-CE-ONS" secondAttribute="trailing" id="7LV-k8-vOH"/>
+                            <constraint firstItem="gRa-Yy-OAX" firstAttribute="top" secondItem="SlD-wD-Hzg" secondAttribute="bottom" constant="40" id="GJa-O5-ZE2"/>
+                            <constraint firstItem="M3A-fQ-2jK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M56-w0-nDD"/>
+                            <constraint firstItem="7tt-fS-yjD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O6j-tp-JTq"/>
+                            <constraint firstItem="1Yu-CE-ONS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PkW-5J-mFL"/>
+                            <constraint firstItem="SlD-wD-Hzg" firstAttribute="top" secondItem="7tt-fS-yjD" secondAttribute="bottom" constant="50" id="Q6f-2s-FE3"/>
+                            <constraint firstItem="JO5-Wb-cOY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QqT-uk-M7c"/>
+                            <constraint firstAttribute="bottom" secondItem="1Yu-CE-ONS" secondAttribute="bottom" id="SOJ-1P-Cbc"/>
+                            <constraint firstItem="M3A-fQ-2jK" firstAttribute="top" secondItem="gRa-Yy-OAX" secondAttribute="bottom" constant="40" id="WFF-YD-zLR"/>
+                            <constraint firstItem="gRa-Yy-OAX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lJe-Nh-kKj"/>
+                            <constraint firstItem="JO5-Wb-cOY" firstAttribute="top" secondItem="M3A-fQ-2jK" secondAttribute="bottom" constant="40" id="rV8-ZZ-blb"/>
+                            <constraint firstItem="JO5-Wb-cOY" firstAttribute="top" secondItem="M3A-fQ-2jK" secondAttribute="bottom" constant="40" id="tun-AL-rSd"/>
+                            <constraint firstItem="gRa-Yy-OAX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uOg-dF-M6t"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.538461538461537" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="414" height="896"/>
+        <image name="Email" width="285" height="69"/>
+        <image name="FB" width="285" height="69"/>
+        <image name="Google" width="285" height="69"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
